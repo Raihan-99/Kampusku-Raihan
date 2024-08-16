@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kampusku - Raihan</string>
+    <string name="sudah_punya_akun_login_disini">Sudah Punya Akun? <b> <i> <u>Login Disini</u> </i></b></string>
+    <string name="belum_punya_akun_daftar_disini">Belum Punya Akun? <b> <i> <u>Register Disini</u> </i></b></string>
+</resources>

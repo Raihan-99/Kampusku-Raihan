@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="25sp"
+    android:id="@+id/info">
+
+    <!-- Header with Application Name -->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kampusku"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <!-- Application Version -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/potensiutama" />
+
+    <TextView
+        android:id="@+id/appVersion"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Versi: 1.0.0"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <!-- Developer Information -->
+    <TextView
+        android:id="@+id/appDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Pengembang : Muhammad Raihan Maulana"
+        android:textSize="18sp" />
+
+    <!-- Application Description -->
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Kampusku adalah aplikasi sederhana yang dirancang untuk mahasiswa Universitas Potensi Utama dengan mengandalkan penyimpanan data local yaitu SQLite.\n
+Kampusku memiliki fitur Login, Register, Lihat Data, Input Data yang mana didalamnya sudah dilengkapi dengan sistem CRUD."
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnTutup"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+</LinearLayout>

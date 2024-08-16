@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@mipmap/mahasiswa"
+        android:id="@+id/Bg"
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:layout_below="@id/Bg"
+        android:id="@+id/btnLihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_list_alt_24"
+        android:layout_marginTop="45sp"
+        android:backgroundTint="#B00000"
+        android:text="Lihat Data"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnInput"
+        android:layout_below="@+id/btnLihat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:backgroundTint="#FFFFFFFF"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/baseline_note_add_24"
+        android:text="Input Data"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnInformasi"
+        android:layout_below="@+id/btnInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:backgroundTint="#000080"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:text="Informasi Aplikasi"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnKeluar"
+        android:layout_below="@+id/btnInformasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:backgroundTint="@color/black"
+        android:drawableLeft="@drawable/baseline_exit_to_app_24"
+        android:text="Keluar"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_marginTop="70sp"
+        android:layout_below="@id/btnKeluar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:paddingTop="10sp"
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@id/btnKeluar"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/background" />
+    </LinearLayout>
+
+</RelativeLayout>

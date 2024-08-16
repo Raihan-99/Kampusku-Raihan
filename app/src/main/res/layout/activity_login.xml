@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/login"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Portal Kampus"
+            android:textAlignment="center"
+            android:textColor="#B00000"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/tvJudul"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/logotoga" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            android:layout_below="@id/logo">
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_person_24"
+                android:drawablePadding="15dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@color/white"
+            android:layout_below="@id/layoutusername"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="15dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_marginTop="35dp"
+            android:layout_below="@id/layoutpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_below="@id/layoutpassword"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#B00000"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:id="@+id/link_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/belum_punya_akun_daftar_disini"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/background"
+            android:layout_width="420dp"
+            android:layout_height="95dp"
+            android:layout_below="@id/link_regist"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/background" />
+    </LinearLayout>
+
+</ScrollView>
